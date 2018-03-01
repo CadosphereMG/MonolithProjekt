@@ -154,14 +154,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapWidth: 100
-  mapHeight: 139
-  noiseScale: 27.6
+  mapHeight: 100
+  noiseScale: 28
   octaves: 29
   persistance: 0.5
   lacunarity: 1.87
-  seed: 101
+  seed: 100
   offset: {x: 0, y: 0}
   autoUpdate: 1
+  regions:
+  - name: Water
+    height: 0.4
+    color: {r: 0.33607265, g: 0.5579138, b: 0.8161765, a: 0}
+  - name: Land
+    height: 1
+    color: {r: 0.16349481, g: 0.61764705, b: 0.16662687, a: 0}
 --- !u!4 &1836965169
 Transform:
   m_ObjectHideFlags: 0
@@ -241,7 +248,7 @@ Transform:
   m_GameObject: {fileID: 1919573882}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 1, z: 101}
+  m_LocalScale: {x: 100, y: 1, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
