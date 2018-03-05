@@ -1,0 +1,84 @@
+Hello ladies and gentlemen, today is an exciting day because not only is it the first of many Developer Logs (or 
+
+journals, or diaries whatever you want to label them) but it is also the announcement video for a new project that
+
+I am working on. 
+
+
+
+That project is a game I'm calling "Monolith Projekt".
+
+
+
+Monolith project is a colony survival game in which you have to keep a group of survivors alive by providing 
+food,
+ shelter, water, power, oxygen, and entertainment to keep everyone happy for them to be able to work at 
+full efficiency. 
+
+
+
+Not only will you need to manage your bases resources, you will need to gather new ones if you want to grow or 
+
+even just sustain your base. But there will be creatures in this living world that your colonists can gather 
+materials from (for example fiber from trees, meats, and oils from animals) in the living world. Although not all 
+of these creatures are passive since any good ecosystem needs predators and on this planet, humans are no longer 
+on the top of food chain. 
+
+
+
+Although since you guys will see these features take shape and be added in over the next many weeks and I'm sure 
+they will go through some big changes from what I've outlined here I won't go into too much detail so let us 
+get
+ into the actual devlog. For the sake of brevity, I won't be including the months of brainstorming and idea 
+forming 
+that took place among my friends and me, but will instead start on Tuesday, February 27, 2018.
+
+
+
+
+On that Tuesday, I started out doing a bunch of boring paperwork and finalizing the ideas and how I was 
+supposed 
+to implement them. This was a pretty boring day as far as actual game development was concerned but it's 
+important 
+for any project to get a solid foundation. 
+
+
+
+Wednesday brought forth a GitHub repository to make it easier for myself to share the files between the computers
+
+I work on and make version control easier. I also got this, yes this, handy-dandy box opener. 
+
+
+
+Thursday I actually started working on the game by building the procedural terrain generator. I got it to place a 
+
+Perlin noise texture on a single tile (although the actual game will be infinite) and added colors for the
+
+different biomes. 
+
+
+
+Friday I got the engine to actually make 3D textures and then I played around with settings until I liked how the 
+world looked for now and made the first creature model. I also added a bunch of sliders and inputs to change the 
+terrain at will instead of having to change the values in the code. These include Level of Detail, Noise Scale, 
+Octaves, Persistance, Lacunarity, Seed, and Offset. 
+
+
+
+Saturday (which is today) I finished up the settings to a point where I like them enough to keep them for now and
+
+started adding in the infinite terrain generator. 
+
+
+
+
+
+Thanks for watching and I hope to see you next week, although I'll be gone next weekend so next week will be a
+
+shorter week so expect the DevLog #2 sometime either Thursday or Friday.
+
+
+
+
+
+See you all next time!
