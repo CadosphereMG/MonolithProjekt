@@ -1,0 +1,23 @@
+body, html {
+	width: auto;
+	height: auto;
+	
+}
+.main {
+	margin: auto;
+	text-align: center;
+}
+.navbar {
+	background-color: black;
+	width: 60%;
+	margin: auto;
+}
+.navbar a {
+	text-decoration: none;
+	font-size: 200%;
+	padding: 15px;
+	color: white;
+}
+.navbar a:hover {
+	color: gray;
+}
