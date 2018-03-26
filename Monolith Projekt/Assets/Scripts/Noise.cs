@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public static class Noise
 {
@@ -8,6 +7,9 @@ public static class Noise
 
     public static float[,] GenerateNoiseMap(int mapWidth, int mapHeight, int seed, float scale, int octaves, float persistance, float lacunarity, Vector2 offset, NormalizeMode normalizeMode)
     {
+        System.Random rng = new System.Random();
+        seed = rng.Next();
+
         float[,] noiseMap = new float[mapWidth, mapHeight];
 
         System.Random prng = new System.Random(seed);

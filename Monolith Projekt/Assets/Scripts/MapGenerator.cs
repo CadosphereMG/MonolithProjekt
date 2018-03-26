@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 using System;
 using System.Threading;
 using System.Collections.Generic;
@@ -7,7 +6,7 @@ using System.Collections.Generic;
 public class MapGenerator : MonoBehaviour
 {
 
-    public enum DrawMode { NoiseMap, ColourMap, Mesh, FalloffMap };
+    public enum DrawMode { NoiseMap, ColorMap, Mesh, FalloffMap };
     public DrawMode drawMode;
 
     public Noise.NormalizeMode normalizeMode;
@@ -53,13 +52,13 @@ public class MapGenerator : MonoBehaviour
         {
             display.DrawTexture(TextureGenerator.TextureFromHeightMap(mapData.heightMap));
         }
-        else if (drawMode == DrawMode.ColourMap)
+        else if (drawMode == DrawMode.ColorMap)
         {
-            display.DrawTexture(TextureGenerator.TextureFromColourMap(mapData.colourMap, mapChunkSize, mapChunkSize));
+            display.DrawTexture(TextureGenerator.TextureFromColourMap(mapData.ColorMap, mapChunkSize, mapChunkSize));
         }
         else if (drawMode == DrawMode.Mesh)
         {
-            display.DrawMesh(MeshGenerator.GenerateTerrainMesh(mapData.heightMap, meshHeightMultiplier, meshHeightCurve, editorPreviewLOD), TextureGenerator.TextureFromColourMap(mapData.colourMap, mapChunkSize, mapChunkSize));
+            display.DrawMesh(MeshGenerator.GenerateTerrainMesh(mapData.heightMap, meshHeightMultiplier, meshHeightCurve, editorPreviewLOD), TextureGenerator.TextureFromColourMap(mapData.ColorMap, mapChunkSize, mapChunkSize));
         }
         else if (drawMode == DrawMode.FalloffMap)
         {
@@ -128,7 +127,7 @@ public class MapGenerator : MonoBehaviour
     {
         float[,] noiseMap = Noise.GenerateNoiseMap(mapChunkSize, mapChunkSize, seed, noiseScale, octaves, persistance, lacunarity, centre + offset, normalizeMode);
 
-        Color[] colourMap = new Color[mapChunkSize * mapChunkSize];
+        Color[] ColorMap = new Color[mapChunkSize * mapChunkSize];
         for (int y = 0; y < mapChunkSize; y++)
         {
             for (int x = 0; x < mapChunkSize; x++)
@@ -142,7 +141,7 @@ public class MapGenerator : MonoBehaviour
                 {
                     if (currentHeight >= regions[i].height)
                     {
-                        colourMap[y * mapChunkSize + x] = regions[i].color;
+                        ColorMap[y * mapChunkSize + x] = regions[i].color;
                     }
                     else
                     {
@@ -153,7 +152,7 @@ public class MapGenerator : MonoBehaviour
         }
 
 
-        return new MapData(noiseMap, colourMap);
+        return new MapData(noiseMap, ColorMap);
     }
 
     void OnValidate()
@@ -196,11 +195,11 @@ public struct TerrainType
 public struct MapData
 {
     public readonly float[,] heightMap;
-    public readonly Color[] colourMap;
+    public readonly Color[] ColorMap;
 
-    public MapData(float[,] heightMap, Color[] colourMap)
+    public MapData(float[,] heightMap, Color[] ColorMap)
     {
         this.heightMap = heightMap;
-        this.colourMap = colourMap;
+        this.ColorMap = ColorMap;
     }
 }

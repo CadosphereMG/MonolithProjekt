@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public static class FalloffGenerator
 {
@@ -25,8 +24,8 @@ public static class FalloffGenerator
 
     static float Evaluate(float value)
     {
-        float a = 3;
-        float b = 2.2f;
+        float a = 6.69f;
+        float b = 2.32f;
 
         return Mathf.Pow(value, a) / (Mathf.Pow(value, a) + Mathf.Pow(b - b * value, a));
     }

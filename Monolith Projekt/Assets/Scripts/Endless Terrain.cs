@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
 
 public class EndlessTerrain : MonoBehaviour
@@ -127,7 +126,7 @@ public class EndlessTerrain : MonoBehaviour
             this.mapData = mapData;
             mapDataReceived = true;
 
-            Texture2D texture = TextureGenerator.TextureFromColourMap(mapData.colourMap, MapGenerator.mapChunkSize, MapGenerator.mapChunkSize);
+            Texture2D texture = TextureGenerator.TextureFromColourMap(mapData.ColorMap, MapGenerator.mapChunkSize, MapGenerator.mapChunkSize);
             meshRenderer.material.mainTexture = texture;
 
             UpdateTerrainChunk();
