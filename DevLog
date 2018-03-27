@@ -1,11 +1,20 @@
 Week #2
 ======
-  Sunday (Day #6) - Got falloff map working and started working on camera motion. 
+  
+Sunday (Day #6) - Got falloff map working and started working on camera motion. 
+Monday (Day #7) - Finished very basic camera motion, fixed depth of field, added a thicker bottom part for the map, and got map to generate on game load
+
+
 
 Week #1
 ======
-  Tuesday (Day #1)- A bunch of paperwork and actual ideas were generated. 
-  Wendesday (Day #2) - Created the github repository for the code.
-  Thursday (Day #3) - Started work on the map generator, got the generator to build a single tile to a point that I like it for now, although there is definietely room for improvement.
-  Friday (Day #4) - Played with settings for environment and made first creature model.  
-  Saturday (Day #5) - Finished up the settings to get them to where I like them for now, started implementing water. 
+  
+Tuesday (Day #1)- A bunch of paperwork and actual ideas were generated. 
+  
+Wendesday (Day #2) - Created the github repository for the code.
+  
+Thursday (Day #3) - Started work on the map generator, got the generator to build a single tile to a point that I like it for now, although there is definietely room for improvement.
+  
+Friday (Day #4) - Played with settings for environment and made first creature model.  
+ 
+Saturday (Day #5) - Finished up the settings to get them to where I like them for now, started implementing water. 
