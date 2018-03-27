@@ -5,7 +5,6 @@ using System.Collections.Generic;
 
 public class MapGenerator : MonoBehaviour
 {
-
     public enum DrawMode { NoiseMap, ColorMap, Mesh, FalloffMap };
     public DrawMode drawMode;
 
@@ -41,6 +40,9 @@ public class MapGenerator : MonoBehaviour
     void Awake()
     {
         falloffMap = FalloffGenerator.GenerateFalloffMap(mapChunkSize);
+
+        MapGenerator mapMaker = gameObject.GetComponent<MapGenerator>();
+        mapMaker.DrawMapInEditor();
     }
 
     public void DrawMapInEditor()
