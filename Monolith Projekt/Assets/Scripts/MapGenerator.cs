@@ -39,12 +39,24 @@ public class MapGenerator : MonoBehaviour
 
     void Awake()
     {
+        seed = UnityEngine.Random.Range(0, int.MaxValue);
+        Debug.Log(seed);
+
         falloffMap = FalloffGenerator.GenerateFalloffMap(mapChunkSize);
 
         MapGenerator mapMaker = gameObject.GetComponent<MapGenerator>();
         mapMaker.DrawMapInEditor();
     }
+    public void RegenButt()
+    {
+        seed = UnityEngine.Random.Range(0, int.MaxValue);
+        Debug.Log(seed);
 
+        falloffMap = FalloffGenerator.GenerateFalloffMap(mapChunkSize);
+
+        MapGenerator mapMaker = gameObject.GetComponent<MapGenerator>();
+        mapMaker.DrawMapInEditor();
+    }
     public void DrawMapInEditor()
     {
         MapData mapData = GenerateMapData(Vector2.zero);
