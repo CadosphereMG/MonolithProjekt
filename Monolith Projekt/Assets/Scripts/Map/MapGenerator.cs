@@ -40,7 +40,7 @@ public class MapGenerator : MonoBehaviour
     void Awake()
     {
         seed = UnityEngine.Random.Range(0, int.MaxValue);
-        Debug.Log(seed);
+        Debug.Log("World seed = " + seed);    
 
         falloffMap = FalloffGenerator.GenerateFalloffMap(mapChunkSize);
 
@@ -50,7 +50,7 @@ public class MapGenerator : MonoBehaviour
     public void RegenButt()
     {
         seed = UnityEngine.Random.Range(0, int.MaxValue);
-        Debug.Log(seed);
+        Debug.Log("World seed = " + seed);
 
         falloffMap = FalloffGenerator.GenerateFalloffMap(mapChunkSize);
 

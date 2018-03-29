@@ -40,6 +40,6 @@ public class CameraMotion : MonoBehaviour
         if (Input.GetKey(KeyCode.Q))
         {
             transform.Rotate(Vector3.down * (Time.deltaTime * 115), Space.Self);
-        }        
+        }
     }
 }

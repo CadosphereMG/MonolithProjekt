@@ -5,6 +5,8 @@ Sunday (Day #6) - Got falloff map working and started working on camera motion.
 Monday (Day #7) - Finished very basic camera motion, fixed depth of field, added a thicker bottom part for the map, and got map to generate on game load
 
 
+Tuesday (Day #8) - Played around with fog and built a stand alone version
+Wednesday (Day #9) - Started working on the water and got rid of the shadow from the player object
 
 Week #1
 ======
